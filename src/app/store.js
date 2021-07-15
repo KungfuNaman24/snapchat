@@ -1,8 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
-
+import cameraReducer from '../features/cameraSlice';
+import appReducer from '../features/appSlice'
 export default configureStore({
   reducer: {
-    counter: counterReducer,
+    app:appReducer,
+    camera:cameraReducer,
   },
 });
